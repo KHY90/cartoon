@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 동화 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>나만의 동화 만들기</h1>
+        <p>얼굴 사진을 업로드하면 동화풍 이미지 4장을 만들어 드려요!</p>
+        
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <label for="imageUpload" class="upload-btn">이미지 선택</label>
+            <button id="generateBtn">만들기</button>
+        </div>
+
+        <div id="preview" class="preview-section">
+            <p>선택된 이미지:</p>
+            <img id="imagePreview" src="#" alt="Image preview"/>
+        </div>
+
+        <div id="loader" class="loader" style="display: none;">
+            <p>이미지를 생성 중입니다... (최대 1분 소요)</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div id="results" class="results-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
