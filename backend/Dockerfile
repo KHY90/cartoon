@@ -18,7 +18,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
         insightface==0.7.3 \
         diffusers==0.28.2 \
         transformers==4.41.2 \
-        accelerate==0.30.1
+        accelerate==0.30.1 \
+        huggingface-hub==0.19.4
 
 # 백엔드 소스 코드 복사
 COPY . .
